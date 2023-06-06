@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+
+<MenuBar styleClass="menu" stylesheets="@application.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hr.java.prskanje.glavni.Izbornik">
+  <menus>
+      <Menu mnemonicParsing="false" onAction="#showGlavniEkran" text="Glavni ekran">
+         <items>
+            <MenuItem mnemonicParsing="false" text="Pocetna" />
+         </items>
+      </Menu>
+    <Menu mnemonicParsing="false" text="| Zemlja |">
+      <items>
+            <MenuItem mnemonicParsing="false" onAction="#showZemljaSort" text="Pregled" />
+      </items>
+    </Menu>
+    <Menu mnemonicParsing="false" text="Pesticid |">
+      <items>
+            <MenuItem mnemonicParsing="false" onAction="#showPesticidiSort" text="Pregled" />
+      </items>
+    </Menu>
+      <Menu mnemonicParsing="false" text="Promjene |">
+        <items>
+          <MenuItem mnemonicParsing="false" onAction="#showPromjeneEkran" text="Prikaz" />
+        </items>
+      </Menu>
+      <Menu mnemonicParsing="false" text="Prskanje">
+        <items>
+          <MenuItem mnemonicParsing="false" onAction="#showPrskanjeEkran" text="Pregled" />
+        </items>
+      </Menu>
+  </menus>
+</MenuBar>

@@ -1,0 +1,127 @@
+.root{
+    -fx-background: linear-gradient(to right top, #111111, #123143, #005a64, #008158, #7ca02a);
+}
+.backimage{
+    -fx-background-image: url('logo.png');
+    -fx-background-position: 5% 50%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 25%;
+}
+
+.label{
+    -fx-font-size: 40;
+    -fx-font-family: "Lucida Console";
+    -fx-text-fill: "white";
+    -fx-alignment: center;
+}
+
+#titleLabel{
+    -fx-font-size: 70;
+}
+
+.Button{
+    -fx-background-color: #008158;
+    -fx-border-radius: 20px;
+    -fx-text-fill: "white";
+}
+.glavniEkran{
+    -fx-background: #123143;
+}
+.nekaj{
+    -fx-background: linear-gradient(to right top, #111111, #123143, #005a64);
+}
+
+.backgroundTextField{
+    -fx-background-color: rgba(18, 49, 67, 0.77);
+    -fx-text-fill: "white";
+    -fx-font-size: 15;
+
+}
+.menu{
+
+    -fx-background-color: rgb(31, 84, 115);
+    -fx-box-shadow: 10px 10px;
+    -fx-font-family: "Lucida Sans Unicode" ;
+}
+.menu .label
+{
+    -fx-font-family: "Verdana" ;
+    -fx-text-fill: #868686;
+    -fx-font-size: 20;
+
+
+}
+.menu .label:hover
+{
+    -fx-background-color: #008158;
+    -fx-text-fill: #ffffff;
+}
+.menu-item .label{
+    -fx-font-family: "Verdana" ;
+    -fx-text-fill: #000000;
+    -fx-font-size: 15;
+}
+.menu-item .label:hover{
+    -fx-text-fill: #ffffff;
+}
+.table-view {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header  {
+    -fx-background-color: #008158;
+}
+
+.table-view .column-header-background .label{
+    -fx-background-color: transparent;
+    -fx-font-weight:bold;
+    -fx-font-size: 30px;
+}
+.table-view .table-cell{
+    -fx-border-color: rgba(2, 255, 176, 0.6);
+    -fx-padding: 2 0 2 10px;
+    -fx-font-size:20px;
+}
+.table-row-cell{
+    -fx-text-background-color: #cbcbcb;
+}
+
+.table-row-cell:hover {
+    -fx-background-color: #93f9b911;
+    -fx-text-background-color: white;
+}
+.table-row-cell:odd{
+    -fx-background-color: #015037;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em;
+}
+.table-row-cell:even{
+    -fx-background-color: #1dbbdd11;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em;
+}
+.table-row-cell:selected{
+    -fx-background-color: #02a2b4;
+    -fx-text-fill: white;
+}
+.text-area .content {
+    -fx-background-color: transparent ;
+    -fx-font-size: 15px;
+    -fx-text-fill: white;
+    -fx-border-color: rgba(2, 255, 176, 0.6);
+}
+.text-area .label{
+    -fx-text-fill: white;
+}
+.text-area{
+    -fx-text-fill: white;
+}
+.button:hover{
+    -fx-background-color: -fx-shadow-highlight-color, -fx-outer-border, -fx-inner-border, -fx-body-color;
+    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+    -fx-background-radius: 3px, 3px, 2px, 1px;
+    -fx-padding: 0.333333em 0.666667em 0.333333em 0.666667em; /* 4 8 4 8 */
+    -fx-text-fill: -fx-text-base-color;
+    -fx-alignment: CENTER;
+    -fx-content-display: LEFT;
+}

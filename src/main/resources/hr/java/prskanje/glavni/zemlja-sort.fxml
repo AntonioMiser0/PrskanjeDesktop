@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" stylesheets="@zemlja.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hr.java.prskanje.glavni.ZemljaSort">
+    <children>
+    <fx:include source="izbornik.fxml" />
+      <TableView fx:id="zemljaTableView" layoutY="287.0" prefHeight="213.0" prefWidth="800.0">
+        <columns>
+          <TableColumn fx:id="nazivColumn" prefWidth="100.0" text="Naziv" />
+          <TableColumn fx:id="brHektaraColumn" prefWidth="128.0" text="br.hektara" />
+            <TableColumn fx:id="poljeNazivColumn" minWidth="0.0" prefWidth="144.00006103515625" text="Naziv polja" />
+            <TableColumn fx:id="poljeUdaljenostColumn" prefWidth="131.2000732421875" text="Udaljenost" />
+            <TableColumn fx:id="kulturaColumn" prefWidth="90.4000244140625" text="Kultura" />
+            <TableColumn fx:id="zakupColumn" prefWidth="68.79998779296875" text="Zakup" />
+            <TableColumn fx:id="vrstaTlaColumn" prefWidth="132.800048828125" text="Vrsta tla" />
+        </columns>
+      </TableView>
+      <TextField fx:id="nazivTextField" layoutX="14.0" layoutY="96.0" promptText="Upište naziv" />
+      <TextField fx:id="poljeNazivTextField" layoutX="14.0" layoutY="171.0" promptText="Upišite naziv polja" />
+      <TextField fx:id="poljeUdaljenostTextField" layoutX="14.0" layoutY="207.0" promptText="Udaljenost od tog polja" />
+      <TextField fx:id="brHektarTextField" layoutX="14.0" layoutY="134.0" promptText="Upišite broj hektara" />
+      <RadioButton fx:id="nemaZakupRadioButton" layoutX="669.0" layoutY="116.0" mnemonicParsing="false" text="Nema">
+         <toggleGroup>
+            <ToggleGroup fx:id="zakup" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="imaZakupRadioButton" layoutX="587.0" layoutY="116.0" mnemonicParsing="false" text="Ima" toggleGroup="$zakup" />
+      <Label layoutX="561.0" layoutY="88.0" style="-fx-font-size: 15px;" text="Ima li zemlja zakup?" />
+      <Button layoutX="535.0" layoutY="237.0" mnemonicParsing="false" onAction="#upisiZemlja" text="Unesi" />
+      <Button layoutX="596.0" layoutY="237.0" mnemonicParsing="false" onAction="#izmjeniZemlja" text="Uredi" />
+      <Button layoutX="672.0" layoutY="237.0" mnemonicParsing="false" onAction="#obrisiPesticid" text="Izbriši" />
+      <ChoiceBox fx:id="kulturaChoiceBox" layoutX="196.0" layoutY="130.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="vrstaTlaChoiceBox" layoutX="365.0" layoutY="130.0" prefWidth="150.0" />
+      <Label layoutX="196.0" layoutY="101.0" style="-fx-font-size: 15px;" text="Odaberite kulturu" />
+      <Label layoutX="363.0" layoutY="101.0" style="-fx-font-size: 15px;" text="Odaberite vrstu tla" />
+      <Button layoutX="730.0" layoutY="237.0" mnemonicParsing="false" onAction="#zemljaSort" text="Pretraži" />
+    </children>
+</AnchorPane>

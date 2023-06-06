@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" styleClass="glavniEkran" stylesheets="@application.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hr.java.prskanje.glavni.PrskanjeEkran">
+   <children>
+       <fx:include source="izbornik.fxml" />
+      <TableView fx:id="prskanjeTableView" layoutX="-2.0" layoutY="238.0" prefHeight="262.0" prefWidth="800.0">
+        <columns>
+          <TableColumn fx:id="zemljaPrskanjeColumn" prefWidth="164.8000122308731" text="ZEMLJA" />
+          <TableColumn fx:id="pesticidiPrskanjeColumn" prefWidth="211.199951171875" text="PESTICID" />
+            <TableColumn fx:id="kolicinaPrskanjeTableColumn" prefWidth="186.39999389648438" text="Kolicina" />
+            <TableColumn fx:id="datumPrskanjeTableColumn" prefWidth="236.800048828125" text="DATUM" />
+        </columns>
+      </TableView>
+      <ChoiceBox fx:id="zemljaidChoiceBox" layoutX="14.0" layoutY="91.0" prefHeight="40.0" prefWidth="150.0" stylesheets="@zemlja.css" />
+      <ChoiceBox fx:id="pesticididChoiceBox" layoutX="194.0" layoutY="91.0" prefHeight="40.0" prefWidth="150.0" stylesheets="@zemlja.css" />
+      <TextField fx:id="kolicinaTextField" layoutX="385.0" layoutY="98.0" />
+      <DatePicker fx:id="datumPicker" layoutX="588.0" layoutY="98.0" stylesheets="@zemlja.css" />
+      <Button layoutX="204.0" layoutY="201.0" mnemonicParsing="false" onAction="#sortirajPrskanje" styleClass="Button" text="Sortiraj" />
+      <Button layoutX="282.0" layoutY="201.0" mnemonicParsing="false" onAction="#urediPrskanje" styleClass="Button" text="Uredi" />
+      <Button layoutX="358.0" layoutY="201.0" mnemonicParsing="false" onAction="#unesiPrskanje" styleClass="Button" text="Unesi" />
+      <Button layoutX="432.0" layoutY="201.0" mnemonicParsing="false" onAction="#obrisiPrskanje" styleClass="Button" text="Obirši" />
+      <Label fx:id="label" layoutX="30.0" layoutY="166.0" style="-fx-font-size: 15px;" text="..." />
+   </children>
+</AnchorPane>
